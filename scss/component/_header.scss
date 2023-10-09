@@ -1,0 +1,50 @@
+.header {
+  background: $color1;
+  height: 132px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title-link {
+    color: $color2;
+    font-family: Clash Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+  }
+  &__line {
+    width: 1386px;
+    height: 1px;
+    background: $color3;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    list-style: none;
+    gap: 44px;
+    a {
+      color: $color4;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+    }
+  }
+  &__icon-link {
+    padding: 26px 0 28px 0;
+  }
+
+  &__apps {
+    display: flex;
+    gap: 16px;
+  }
+}
