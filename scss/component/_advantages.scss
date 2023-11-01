@@ -1,6 +1,11 @@
 .advantages {
   padding: 72px 0 54px;
-  background: "../../src/img/advantages-bg.png" cover/no-repeat;
+
+  background: url(../../src/img/advantages-bg.png) no-repeat;
+  background-position: right;
+  &__title {
+    width: 514px;
+  }
   &__desc {
     padding-top: 36px;
     width: 536px;
@@ -8,6 +13,9 @@
   &__btn {
     border: none;
     cursor: pointer;
-    background: $color9 ;
+    background: $color9;
+    margin-top: 196px;
+    width: 150px;
+    height: 56px;
   }
 }

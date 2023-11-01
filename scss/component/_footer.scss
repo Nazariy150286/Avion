@@ -1,0 +1,58 @@
+.footer {
+  padding: 58px 0 25px;
+  background: $color5;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: $color1;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  h4 {
+    color: $color1;
+    font-weight: 400;
+  }
+  &__block {
+    display: flex;
+  }
+  &__title {
+    padding: 0 39px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 12px;
+  }
+  &__block-center {
+    display: flex;
+    gap: 109px;
+  }
+  &__input {
+    width: 509px;
+    height: 56px;
+    background: $color11;
+    outline: none;
+    border: none;
+    margin-top: 16px;
+  }
+  &__input::placeholder {
+    padding: 17px 32px;
+    color: $color1;
+    font-weight: 400;
+  }
+  &__btn {
+    width: 118px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+  }
+  &__line {
+    width: 1277px;
+    height: 1px;
+    background: $color12;
+    margin: 48px 0 24px;
+  }
+}
