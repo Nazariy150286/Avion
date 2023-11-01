@@ -1,0 +1,45 @@
+.join {
+  background: $color9;
+  padding: 52px 0 89px;
+
+  .container {
+    background: $color1;
+    padding: 68px 0 64px;
+  }
+  &__title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__desc {
+    padding-top: 16px;
+    width: 470px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 72px;
+  }
+  &__form-input {
+    width: 354px;
+    height: 56px;
+    outline: none;
+    border: none;
+    background: $color9;
+    padding: 17px 32px 17px;
+  }
+  &__form-btn {
+    width: 118px;
+    height: 56px;
+    border: none;
+    background: $color5;
+    color: $color1;
+  }
+  &__form-input::placeholder {
+    color: $color10;
+  }
+}

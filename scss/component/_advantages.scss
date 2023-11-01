@@ -1,0 +1,13 @@
+.advantages {
+  padding: 72px 0 54px;
+  background: "../../src/img/advantages-bg.png" cover/no-repeat;
+  &__desc {
+    padding-top: 36px;
+    width: 536px;
+  }
+  &__btn {
+    border: none;
+    cursor: pointer;
+    background: $color9 ;
+  }
+}

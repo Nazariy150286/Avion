@@ -1,0 +1,27 @@
+.about {
+  padding: 60px 0 86px;
+  &__title {
+    color: var(--Dark-Primary, $color5);
+
+    /* Headings / H3 */
+    font-family: Clash Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 59px;
+    li {
+      width: 270px;
+      padding-top: 51px;
+      h4 {
+        padding: 16px 0 8px;
+      }
+    }
+  }
+}

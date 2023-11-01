@@ -1,8 +1,4 @@
-@import "./utils/general";
-@import "./utils/mixin";
-@import "./utils/placeholders";
-@import "./utils/variables";
-@import "./utils/color";
-
-@import "./component/header";
-@import "./component/promo";
+@import "./utils/color", "./utils/general", "./utils/mixin",
+  "./utils/placeholders", "./utils/variables", "./component/header",
+  "./component/promo", "./component/about", "./component/_catalog.scss",
+  "./component/_products.scss", "./component/join", "./component/advantages";

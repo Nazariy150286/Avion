@@ -1,5 +1,5 @@
 .promo {
-  padding: 60px 80px 60px 80px;
+  margin: 60px 80px 60px 80px;
 
   &__wrapper {
     background: #2a254b;
@@ -10,10 +10,11 @@
 
   &__title {
     color: $color6;
-    font-family: Clash Display;
+    font-family: "Clash Display";
     font-size: 32px;
     font-weight: 400;
     line-height: 140%;
+    padding-top: 60px;
   }
   &__block {
     padding: 0 0 0 60px;
@@ -27,6 +28,8 @@
     background: $color7;
     padding: 16px 32px;
     border: none;
+    cursor: pointer;
+    margin-top: 41px;
   }
 
   &__desc {
@@ -34,6 +37,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    padding-top: 200px;
+    padding-top: 196px;
   }
 }
