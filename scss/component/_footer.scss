@@ -55,4 +55,16 @@
     background: $color12;
     margin: 48px 0 24px;
   }
+  &__inf {
+    color: $color1;
+  }
+  &__list-icons {
+    display: flex;
+    gap: 24px;
+  }
+  &__bottom-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
