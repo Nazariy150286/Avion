@@ -1,11 +1,33 @@
 .header {
   background: $color1;
-  height: 132px;
 
-  &__wrapper {
+  @media (min-width: 390px) {
+    height: 69px;
+  }
+  @media (min-width: 1440px) {
+    height: 132px;
+    width: 100%;
+  }
+  &__apps--mobile {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    padding-left: 229px;
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+  &__wrapper {
+    padding: 0 28px;
+    display: flex;
+
     align-items: center;
+    @media (min-width: 390px) {
+      text-align: left;
+    }
+    @media (min-width: 1440px) {
+      justify-content: space-between;
+    }
   }
 
   &__title-link {
@@ -15,22 +37,39 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    display: block;
-    margin: 0 auto;
+
     padding: 20px 0 20px 0;
+    @media (min-width: 390px) {
+      margin: 0;
+    }
+    @media (min-width: 1440px) {
+      margin: 0 auto;
+      display: block;
+    }
   }
   &__line {
-    width: 100%;
-    height: 1px;
-    background: $color3;
+    @media (min-width: 390px) {
+      display: none;
+    }
+    @media (min-width: 1440px) {
+      width: 1480px;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid $color3;
+    }
   }
   &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px 0 20px 0;
     list-style: none;
     gap: 44px;
+    @media (min-width: 390px) {
+      display: none;
+    }
+    @media (min-width: 1440px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     a {
       color: $color4;
       font-size: 16px;
@@ -41,16 +80,62 @@
   }
   &__icon-link {
     padding: 26px 0 28px 0;
+    text-decoration: none;
     i {
       color: $color8;
+      @media (min-width: 390px) {
+        display: none;
+      }
+      @media (min-width: 1440px) {
+        display: block;
+      }
     }
   }
-
+  &__icon-link--mobile {
+    color: #000;
+  }
+  &__app {
+    text-decoration: none;
+    padding-left: 16px;
+  }
   &__apps {
     display: flex;
     gap: 16px;
+
     i {
       color: #000;
+    }
+    @media (min-width: 390px) {
+      display: none;
+    }
+    @media (min-width: 1440px) {
+      display: block;
+    }
+  }
+  &__hamburger {
+    @media (min-width: 390px) {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      span {
+        transition: 0.5s;
+        width: 24px;
+
+        display: block;
+        border: 1px solid #212121;
+      }
+    }
+
+    &--active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translateY(5px);
+      }
+      span:nth-child(2) {
+        display: none;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-5px);
+      }
     }
   }
 }

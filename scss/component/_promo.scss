@@ -1,11 +1,31 @@
 .promo {
-  margin: 60px 80px 60px 80px;
+  .container {
+    @media (min-width: 390px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  @media (min-width: 390px) {
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 60px 80px;
+  }
 
   &__wrapper {
     background: #2a254b;
-    width: 100%;
+
     display: flex;
-    gap: 99px;
+
+    @media (min-width: 390px) {
+      width: 390px;
+      padding: 40px 0 40px;
+    }
+    @media (min-width: 1440px) {
+      gap: 99px;
+      width: 100%;
+      padding: 0;
+    }
   }
 
   &__title {
@@ -14,10 +34,23 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 140%;
-    padding-top: 60px;
+
+    @media (min-width: 1440px) {
+      padding-top: 60px;
+    }
   }
   &__block {
     padding: 0 0 0 60px;
+    @media (min-width: 390px) {
+      padding: 0 24px;
+    }
+  }
+  &__item-block {
+    @media (min-width: 390px) {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
   }
   &__btn {
     color: $color6;
@@ -29,7 +62,10 @@
     padding: 16px 32px;
     border: none;
     cursor: pointer;
-    margin-top: 41px;
+
+    @media (min-width: 1440px) {
+      margin-top: 41px;
+    }
   }
 
   &__desc {
@@ -37,6 +73,20 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    padding-top: 196px;
+
+    @media (min-width: 390px) {
+      padding-top: 80px;
+    }
+    @media (min-width: 1440px) {
+      padding-top: 196px;
+    }
+  }
+  &__img {
+    @media (min-width: 390px) {
+      display: none;
+      @media (min-width: 1440px) {
+        display: block;
+      }
+    }
   }
 }
