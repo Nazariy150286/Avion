@@ -1,14 +1,32 @@
 .advantages {
-  padding: 72px 0 54px;
-
-  background: url(../../src/img/advantages-bg.png) no-repeat;
-  background-position: right;
+  @media (min-width: 390px) {
+    padding: 48px 0;
+  }
+  @media (min-width: 1440px) {
+    background: url(../../src/img/advantages-bg.png) no-repeat;
+    background-position: right;
+    padding: 72px 0 54px;
+  }
+  &__box--mobile {
+    @media (min-width: 390px) {
+      display: block;
+    }
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
   &__title {
     width: 514px;
+    @media (min-width: 390px) {
+      width: auto;
+    }
   }
   &__desc {
     padding-top: 36px;
     width: 536px;
+    @media (min-width: 390px) {
+      width: auto;
+    }
   }
   &__btn {
     border: none;
@@ -17,5 +35,9 @@
     margin-top: 196px;
     width: 150px;
     height: 56px;
+    @media (min-width: 390px) {
+      width: 342px;
+      margin-bottom: 38px;
+    }
   }
 }

@@ -5,16 +5,34 @@
     gap: 20px;
     list-style: none;
     padding: 33px 0 35px;
+    @media (min-width: 390px) {
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1440px) {
+      flex-wrap: nowrap;
+    }
     li {
-      width: 305px;
-      height: 375px;
+      @media (min-width: 390px) {
+        width: 163px;
+        height: 288px;
+      }
+      @media (min-width: 1440px) {
+        width: 305px;
+        height: 375px;
+      }
       h4 {
         padding: 24px 0 8px;
       }
     }
     img {
-      width: 305px;
-      height: 375px;
+      @media (min-width: 390px) {
+        width: 163px;
+        height: 201px;
+      }
+      @media (min-width: 1440px) {
+        width: 305px;
+        height: 375px;
+      }
     }
   }
   &__btn {
